@@ -1,3 +1,5 @@
+use std::f32::consts::E;
+
 fn main() {
     // let four = IpAddrKind::V4;
     // let six = IpAddrKind::V6;
@@ -17,6 +19,12 @@ fn main() {
 
     let m = Message::Write(String::from("hello"));
     m.call();
+
+    // Option<T> enum
+    let some_number = Some(5);
+    let some_char = Some('N');
+
+    let absent_number: Option<i32> = None;
 }
 
 enum IpAddr {
